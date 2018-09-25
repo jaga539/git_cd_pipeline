@@ -1,8 +1,13 @@
 node
 {
-   stage ('Package')
+   stage ('checkout scm')
    { 
-     
+     checkout scm
+   }
+   
+    stage ('checkout scm')
+   { 
+     bat 'mvn clean package'
    }
 }
 
