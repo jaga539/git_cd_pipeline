@@ -4,10 +4,9 @@ node
    { 
      checkout scm
    }
-   
-   stage ('maven version)
+      stage ('maven version)
    {
-      bat 'mvn --version'
+      bat 'mvn -v'
    }  
     stage ('checkout scm')
    { 
